@@ -3,6 +3,8 @@ import React from "react";
 import { readFile, writeFile } from "../helpers/file-helpers";
 
 const DATABASE_PATH = "/src/database.json";
+export const dynamic = "force-dynamic";
+
 function Home() {
   let { hits } = JSON.parse(readFile(DATABASE_PATH));
 
